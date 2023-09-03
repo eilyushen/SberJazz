@@ -15,12 +15,12 @@ dependencies {
     // Logging of 3-rd party libraries
     testImplementation group: 'org.slf4j', name: 'jul-to-slf4j', version: '2.0.7'
     testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.7'
+    implementation 'org.apache.commons:commons-text:1.10.0'
 }
 
 test {
     // JUnit 5
     useJUnitPlatform()
-    failFast = true
 }
 
 tasks.withType(Test) {
