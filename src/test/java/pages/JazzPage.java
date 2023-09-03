@@ -1,11 +1,11 @@
 package pages;
 
-import com.codeborne.selenide.Condition;
 import org.openqa.selenium.WindowType;
 
 import java.util.Collections;
 import java.util.List;
 
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static utils.RandomStringGeneratorHelper.randomNumeric;
 
@@ -33,8 +33,8 @@ public class JazzPage {
     }
 
     public void joinServer(String name) {
-        $(CONTINUE_IN_BROWSER).shouldBe(Condition.visible).click();
-        $(NAME).shouldBe(Condition.visible).setValue(name);
+        $(CONTINUE_IN_BROWSER).shouldBe(visible).click();
+        $(NAME).shouldBe(visible).setValue(name);
         $(JOIN).click();
     }
 }
