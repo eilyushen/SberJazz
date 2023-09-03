@@ -1,0 +1,2 @@
+# SberJazz
+./gradlew clean build
