@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Parser {
 
     public List<String> listOfNames() {
-        String path = "src\\test\\resources\\userNames";
+        String path = "src\\test\\resources\\usersNames";
 
         List<String> lines = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(path))) {
